@@ -1,13 +1,21 @@
 <html>
     <head>
-         <title>
+        <title>
           Calculator
         </title>
-       <script>
-           function clickHandler(){console.log("click!");}
-</script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">></script>
+           
+        <script>
+            function clickHandler(){
+                var whatIsInside = $("#text").val(); 
+                var whatIsInsideUp = whatIsInside.toUpperCase()
+                console.log (whatIsInsideUp)
+            }
+         </script>       
     </head>
+
     <body>
-  <p><button onclick = "clickHandler()">Calculate</button></p>
-        </body>
-    </html>
+        <input type = "text" id = "text" size = "50"> 
+        <p><button onclick = "clickHandler()">Calculate</button></p>
+    </body>
+</html>
